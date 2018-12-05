@@ -17,6 +17,9 @@ NI VeriStand 2015
 
 ![Image/P2.png](Image/P2.png)
 
+4.在Channel Folder之下还可以手动创建通道或者通道文件夹
+![Image/P4.png](Image/P4.png)
+
 ## ini文件
 ![Image/P3.png](Image/P3.png)
 
