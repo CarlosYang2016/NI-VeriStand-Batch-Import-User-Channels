@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>Batch-Import-User-Channels</eng>
+    <loc>Batch-Import-User-Channels</loc>
+  </AddMenu>
+  <Version>1.0</Version>
+  <Type>Asynchronous</Type>
+  <MaxOccurrence>2474</MaxOccurrence>
+  <MainPageGUID>1fe4286e-52ec-46ea-be09-d9ba12c7020b</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Configuration.llb\Batch-Import-User-Channels Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>PharlapWindows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Engine.llb\Batch-Import-User-Channels RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Engine.llb\Batch-Import-User-Channels RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>Batch-Import-User-Channels</eng>
+        <loc>Batch-Import-User-Channels</loc>
+      </Name>
+      <GUID>1fe4286e-52ec-46ea-be09-d9ba12c7020b</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Configuration.llb\Batch-Import-User-Channels Main Page.vi</Path>
+      </Item2Launch>
+    </Page>
+    <Page>
+      <Name>
+        <eng>User-Channels Group</eng>
+        <loc>User-Channels Group</loc>
+      </Name>
+      <GUID>a47dc6fa-9b45-4bcc-a197-52abfde7a008</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\import.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Configuration.llb\Batch-Import-User-Channels Group.vi</Path>
+      </Item2Launch>
+    </Page>
+	<Page>
+      <Name>
+        <eng>User-Channel</eng>
+        <loc>User-Channel</loc>
+      </Name>
+      <GUID>a54dc6fa-9b45-4bcc-a197-52abfde7a018</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\alias section.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\Batch-Import-User-Channels\Batch-Import-User-Channels Configuration.llb\Batch-Import-User-Channels Channel.vi</Path>
+      </Item2Launch>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
